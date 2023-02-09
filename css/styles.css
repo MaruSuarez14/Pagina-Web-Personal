@@ -1,0 +1,492 @@
+@import url('https://fonts.googleapis.com/css2?family=Aclonica&family=Patrick+Hand&family=Solway&display=swap');
+
+/* General */ 
+
+* {
+    font-family: 'Solway';
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-display: block;
+    
+}
+
+a:visited {
+    color: inherit;
+}
+ul {
+    list-style: none;
+}
+
+.titulo{
+    text-align: center;
+    padding: 20px;
+    font-size: 42px;
+}
+
+/* Header */ 
+
+.header-div {
+    position: fixed;
+    width: 100%;
+    background-color: #000;
+    z-index: 99;
+}
+.header {  
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+}
+
+.logo a {
+    text-decoration: none;
+    font-size: 32px;
+    color: #848484;
+    font-family: 'Aclonica';
+    font-weight: bold;
+    margin: 20px;
+}
+
+.header ul {
+    display: flex;
+}
+
+.nav-item a {
+    color: white;
+    font-size: 18px;
+    text-align: none;
+    text-decoration: none;
+    padding: 10px;
+    margin: 15px;
+}
+
+.nav-item a:hover {
+    color: #848484;
+}
+
+.icono-nav {
+    color: white;
+    background-color: #848484;
+    padding: 8px;
+    border-radius: 4px;
+    cursor: pointer;
+    display: none;
+}
+
+
+/* Seccion Inicio */ 
+
+.inicio {
+    background: linear-gradient(to bottom, rgb(0 0 0 / .75), rgb(0 0 0 / .5)), url(../img/imagen-principal.avif);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat; 
+    height: 100vh;
+    color: #FFF;
+    align-items: center;
+    display: flex;
+}
+
+.inicio-presentacion {
+    background-color: #000;
+    border: 2px solid black;
+    border-radius: 10px;
+    text-align: center;
+    margin: 0 auto; 
+    padding: 30px;
+    
+} 
+
+.inicio-imagen {
+    
+    border-radius: 5px;
+}
+
+.inicio-presentacion h1 {
+    font-size: 32px;
+    margin-top: 20px;
+    margin-bottom: 5px;
+}
+
+.inicio-presentacion h2 {
+    font-weight: normal;
+    font-size: 22px;
+}
+
+/* Seccion Presentación */
+
+.presentacion {
+    background-color: #000;
+    color: white;
+    padding: 60px;
+}
+
+.presentacion-parrafo{
+    font-size: 18px;
+    margin: 30px;
+    line-height: 25px;
+}
+
+.presentacion-filas {
+    display: flex;
+    flex-direction: row;
+}
+
+.presentacion-columnas {
+   width: 50%;
+   margin: 20px;
+}
+
+
+.intereses-div {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.intereses {
+   display: grid;
+   align-items: center;
+   justify-items: center;
+    width: 120px;
+    height: 120px;
+    background-color: white;
+    font-size: 18px;
+    color: #000;
+    border-radius: 10px;
+    margin: 15px;
+}
+
+.material-icons {
+    font-size: 30px;
+}
+
+.presentacion-titulo {
+    margin: 15px;
+    font-size: 24px;
+}
+
+.presentacion-columnas ul {
+    padding: 5px;
+}
+
+.presentacion-columnas ul li {
+    font-size: 18px;
+    padding: 8px;
+}
+
+.presentacion-columnas ul li span {
+    font-weight: bold;
+    color: #848484;
+}
+
+/* Seccion Curriculum */
+
+.curriculum {
+    background-color: #000;
+    background-image: url(../img/asfalt-light.png);
+    color: #FFF;
+    padding: 60px;
+}
+
+.curriculum-div {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-content: center;
+}
+
+.estudios, .trabajos, .idiomas, .digitales{
+    margin: 20px;
+}
+
+.estudio-item, .trabajo-item, .idioma-item, .digital-item {
+    padding: 20px;
+    margin: 20px;
+    background-color: white;
+    border-radius: 5px;
+    color: #000;
+}
+
+.digital-item ul {
+    list-style: inside;
+}
+
+.estudio-item {
+    max-width: 400px;
+}
+.trabajo-item {
+    max-width: 200px;
+ }
+
+ .idioma-item {
+    max-width: 160px;
+ }
+
+ .curriculum-col {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+ }
+
+ .curriculum-col p, .curriculum-col ul {
+    padding-left: 10px;
+ }
+
+
+ .digital-item ul li {
+    padding-bottom: 4px;
+ }
+
+.curriculum-div h3 {
+    font-size: 26px;
+    padding: 5px;
+}
+
+.curriculum-div h4 {
+    font-size: 17px;
+    margin-bottom: 8px;
+}
+
+.idiomas h4, .digitales h4 {
+    font-size: 19px;
+}
+
+.lugar {
+    font-size: 19px;
+    font-weight: bold;
+}
+
+.nivel {
+    font-weight: bold;
+}
+
+.fecha {
+    color: #5f5f5f;
+}
+
+
+/* Sección Portfolio */ 
+
+.portfolio {
+    background-color: #000;
+    color: #FFF;
+    padding: 60px;
+}
+
+.proyectos-div {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.proyecto {
+    position: relative;
+    height: fit-content;
+    margin: 30px;
+}
+
+.proyecto img {
+    width: 100%;
+    height: 100%;
+}
+
+.visualizar {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    background: linear-gradient( rgba(70, 70, 70, .8), rgba(70, 70, 70, .8));
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    transition: 1s;
+    font-size: 22px;
+    opacity: 0;
+}
+
+.visualizar:hover {
+    opacity: 1;
+}
+
+.visualizar:focus-within {
+    opacity: 1;
+}
+
+
+.proyecto a {
+    color: #000;
+    font-size: 28px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.proyecto h3, .proyecto h4{
+    margin: 10px;
+    text-align: center;
+}
+
+.proyecto h4{
+    font-weight: normal;
+}
+
+/* Sección Contacto */
+
+.contacto {
+    background-color: #000;
+    background-image: url(../img/asfalt-light.png);
+    color: #FFF;
+    padding: 60px;
+}
+
+.contacto-fila {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.contacto-titulo {
+    font-size: 36px;
+    padding: 10px;
+    max-width: 500px;
+}
+
+.contacto-parrafo {
+    max-width: 500px;
+    line-height: 22px;
+}
+
+
+.contacto-columna {
+    padding: 40px 60px;
+}
+
+
+.contacto-form {
+    padding: 7px;
+    font-size: 18px;
+}
+
+.contacto-form textarea {
+    padding: 10px; 
+}
+
+::placeholder {
+    color: #000;
+}
+
+.contacto-boton {
+    border-radius: 4px;
+    padding: 4px;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+.contacto-boton:hover {
+    background-color: #848484;
+}
+
+
+/* Footer */
+
+.footer {
+    background-color: #000;
+    text-align: center;
+    padding: 20px;
+}
+
+.redes a {
+    color: #FFF;
+    padding: 7px;
+} 
+.redes i {
+    font-size: 25px;
+}
+
+
+/* Media Queries */ 
+
+/*Navegador*/
+@media screen and (max-width:980px) {
+    nav {
+        display: none;
+    }
+
+    .icono-nav {
+        display: block;
+    }
+
+    nav.icono{
+        display: block;
+        position: absolute;
+        top: 75px;
+        right: 0px;
+        width: 160px;
+        background-color: #000;
+
+    }
+
+    nav.icono ul{
+        display: block !important;
+    }
+    
+    nav.icono li {
+        border-bottom: 1px solid white;
+        padding: 5px;
+    }
+}
+/*Presentación*/
+@media (max-width:960px){
+    .intereses-div{
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+@media (max-width:360px){
+    .intereses-div{
+        grid-template-columns: 1fr;
+    }
+}  
+@media (max-width:720px){
+    .presentacion-filas{
+        flex-direction: column;
+    }
+} 
+
+/*Curriculum*/
+@media (max-width:920px){
+    .curriculum-col{
+      grid-template-columns: 1fr;
+    }
+  }
+  @media (max-width:720px){
+    .curriculum-div{
+        grid-template-columns: 1fr;
+    }
+    .curriculum-col{
+        grid-template-columns: repeat(2, 1fr);
+    }
+  }
+
+  @media (max-width:420px){
+    .curriculum-col{
+        grid-template-columns: 1fr;
+    }
+  }
+
+  /*Portfolio*/
+  @media (max-width:640px){
+    .proyectos-div{
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+  @media (max-width:520px){
+    .proyectos-div{
+        grid-template-columns: 1fr;
+    }
+  }
+
+   /*Contacto*/
+   @media (max-width:680px){
+    .contacto-fila{
+      flex-direction: column;
+    }
+  }

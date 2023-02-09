@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Personal Website">
+    <meta name="author" content="Maru">
+    <title>Página Web</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/173ad2fbe5.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+    <!--Menú-->
+    <div class="header-div">
+        <header class="header">
+            <div class="logo" role="link">
+                <a href="#"> Maru </a>
+            </div>
+            <button class="icono-nav" onclick="showMenu()">
+                <i class="menuIcon material-icons">menu</i>
+            </button>
+            <nav class="nav" id="nav">
+                <ul>
+                    <li class="nav-item" onclick="select()"><a href="#inicio">Inicio</a></li>
+                    <li class="nav-item" onclick="select()"><a href="#presentacion">Presentación</a></li>
+                    <li class="nav-item" onclick="select()"><a href="#curriculum">Curriculum</a></li>
+                    <li class="nav-item" onclick="select()"><a href="#portfolio">Portfolio</a></li>
+                    <li class="nav-item" onclick="select()"><a href="#contacto">Contacto</a></li>
+                </ul>
+            </nav>
+            
+        </header>
+    </div>
+
+    <!--Inicio-->
+    <main>
+
+        <section class="inicio" id="inicio">
+            <div class="inicio-presentacion">
+                <img class="inicio-imagen" src="img/Foto.avif" alt="Maru" width="200px" height="150px">
+                <h1> Maru Suarez </h1>
+                <h2> Estudiante de Desarrollo de Aplicaciones Web</h2>
+            </div>
+        </section>
+
+        <section class="presentacion" id="presentacion">
+            <h2 class="titulo"> Presentación </h2>
+            <p class="presentacion-parrafo"> Mi nombre es Maru Suarez, tengo 24 años y vivo en Palma de Mallorca.
+                Actualmente estoy estudiando un
+                Ciclo Formativo de Grado Superior de Desarrollo de Aplicaciones Web. Me empecé a interesar por este
+                campo a
+                raíz de mi afición por
+                los videojuegos, ya que quería aprender la tarea que se llevaba detras para desarrollarlos. Por esta
+                razón,
+                me fui a Madrid a estudiar
+                durante dos años un grado de Diseño y Desarrollo de Videojuegos. No pude finalizar la carrera, pero
+                durante
+                el curso he podido
+                adquirir conocimientos de programación, diseño y narrativa para videojuegos. Mi objetivo ahora es
+                centrarme
+                en el desarrollo web y
+                trabajar como "back-end".
+            </p>
+            <div class="presentacion-filas">
+                <div class="presentacion-columnas">
+                    <h3 class="presentacion-titulo"> Datos personales </h3>
+                    <ul>
+                        <li> <span> Fecha de nacimiento: </span> 14/05/1998 </li>
+                        <li> <span> País de nacimiento: </span> Argentina </li>
+                        <li> <span> Correo electrónico: </span> mariaeugenia&#8203;suarezpastene14@gmail.com </li>
+                        <li> <span> Número de teléfono: </span> +34 674 014 708 </li>
+                        <li> <span> Dirección: </span> Cala Llombards 2, 07009, Palma </li>
+                    </ul>
+                </div>
+
+                <div class="presentacion-columnas">
+                    <h3 class="presentacion-titulo"> Intereses </h3>
+                    <div class="intereses-div">
+                        <div class="intereses">
+                            <i class="material-icons"> sports_esports</i>
+                            <p>Videojuegos</p>
+                        </div>
+                        <div class="intereses">
+                            <i class="material-icons"> science </i>
+                            <p>Ciencia</p>
+                        </div>
+                        <div class="intereses">
+                            <i class="material-icons"> headphones </i>
+                            <p>Música</p>
+                        </div>
+                        <div class="intereses">
+                            <i class="material-icons"> pets </i>
+                            <p>Animales </p>
+                        </div>
+                        <div class="intereses">
+                            <i class="material-icons"> flight </i>
+                            <p>Aviación </p>
+                        </div>
+                        <div class="intereses">
+                            <i class="material-icons"> movie </i>
+                            <p> Cine </p>
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!--Curriculum-->
+        <section class="curriculum" id="curriculum">
+            <h2 class="titulo"> Curriculum </h2>
+            <div class="curriculum-div">
+                <article>
+                    <div class="curriculum-col">
+                        <div class="estudios">
+                            <h3> Formación académica </h3>
+                            <div class="estudio-item" aria-roledescription="">
+                                <h4>Desarrollo de aplicaciones web</h4>
+                                <p class="lugar">Es liceu</p>
+                                <p class="fecha">2021 - Actualidad</p>
+                            </div>
+                            <div class="estudio-item">
+                                <h4>Diseño y Desarrollo de Videojuegos (2 años) </h4>
+                                <p class="lugar">Universidad Rey Juan Carlos</p>
+                                <p class="fecha">2016 - 2018 </p>
+                            </div>
+                            <div class="estudio-item">
+                                <h4>Bachillerato Científico - Tecnológico</h4>
+                                <p class="lugar">Ies Juniper Serra</p>
+                                <p class="fecha">2014 - 2016</p>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+                <article>
+                    <div class="trabajos">
+                        <h3> Experiencia laboral </h3>
+                        <div class="curriculum-col">
+                            <div class="trabajo-item">
+                                <h4>Coordinadora de vuelos</h4>
+                                <p class="lugar">EasyJet</p>
+                                <p class="fecha">2022 - 2022 </p>
+                            </div>
+                            <div class="trabajo-item">
+                                <h4>Coordinadora de vuelos</h4>
+                                <p class="lugar">Norwegian</p>
+                                <p class="fecha">2022 - 2022 </p>
+                            </div>
+                            <div class="trabajo-item">
+                                <h4>Taquillera</h4>
+                                <p class="lugar">Aficine Ocimax</p>
+                                <p class="fecha">2019 - 2021 </p>
+                            </div>
+                            <div class="trabajo-item">
+                                <h4>Personal de equipo</h4>
+                                <p class="lugar">McDonald's</p>
+                                <p class="fecha">2018 - 2019 </p>
+                            </div>
+                            <div class="trabajo-item">
+                                <h4>Dependienta en librería </h4>
+                                <p class="lugar">Biblioteca de Babel</p>
+                                <p class="fecha">2016 - 2017 </p>
+                            </div>
+                            <div class="trabajo-item">
+                                <h4>Promotora de ventas</h4>
+                                <p class="lugar">Merchanservis</p>
+                                <p class="fecha">2016 - 2016 </p>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+                <article>
+                    <div class="idiomas">
+                        <h3>Idiomas</h3>
+                        <div class="curriculum-col">
+                            <div class="idioma-item">
+                                <h4>Catalán</h4>
+                                <p><span class="nivel">Nivel:</span> C1</p>
+                            </div>
+                            <div class="idioma-item">
+                                <h4>Inglés</h4>
+                                <p><span class="nivel">Nivel:</span> B2</p>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+                <article>
+                    <div class="digitales">
+                        <h3>Competencias digitales</h3>
+                        <div class="curriculum-col">
+                            <div class="digital-item">
+                                <h4>Lenguajes de programación:</h4>
+                                <ul>
+                                    <li>HTML, Javascript y CSS</li>
+                                    <li>Java</li>
+                                    <li>C++(Básico)</li>
+                                    <li>MySQL</li>
+                                </ul>
+                            </div>
+                            <div class="digital-item">
+                                <h4>Entornos de desarrollo: </h4>
+                                <ul>
+                                    <li>Intellij IDEA</li>
+                                    <li>Eclipse</li>
+                                    <li>Visual Studio</li>
+                                    <li>NetBeans</li>
+                                    <li>DBeaver</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+            </div>
+
+
+        </section>
+
+        <!--Porfolio-->
+        <section class="portfolio" id="portfolio">
+            <h2 class="titulo"> Portfolio </h2>
+            <div class="proyectos-div">
+                <article class="proyecto">
+                    <img src="img/maze.avif" alt="Laberinto" width="550px" height="350px">
+                    <h3>Laberinto</h3>
+                    <h4>Java</h4>
+                    <div class="visualizar">
+                        <a href="https://github.com/MaruSuarez14/Laberinto.git"> Ver proyecto</a>
+                    </div>
+                </article>
+                <article class="proyecto" tabindex="">
+                    <img src="img/figuras_geometricas.avif" alt="Figuras" width="550px" height="350px">
+                    <h3>Figuras geométricas</h3>
+                    <h4>Java</h4>
+                    <div class="visualizar">
+                        <a href="https://github.com/MaruSuarez14/Figuras_Geometricas.git"> Ver proyecto</a>
+                    </div>
+                </article>
+                <article class="proyecto">
+                    <img src="img/barcode.avif" alt="Barras" width="550px" height="350px">
+                    <h3>Código de barras</h3>
+                    <h4>Java</h4>
+                    <div class="visualizar">
+                        <a href="https://github.com/MaruSuarez14/Barcode.git"> Ver proyecto</a>
+                    </div>
+                </article>
+                <article class="proyecto">
+                    <img src="img/buscaminas.avif" alt="Buscaminas" width="550px" height="350px">
+                    <h3>Buscaminas</h3>
+                    <h4>HTML y Javascript</h4>
+                    <div class="visualizar">
+                        <a href="https://github.com/MaruSuarez14/Buscaminas.git"> Ver proyecto</a>
+                    </div>
+                </article>
+                <article class="proyecto">
+                    <img src="img/mazmorra.avif" alt="Buscaminas" width="550px" height="350px">
+                    <h3>Mazmorra</h3>
+                    <h4>JDBC</h4>
+                    <div class="visualizar">
+                        <a href="https://github.com/MaruSuarez14/Mazmorra.git"> Ver proyecto</a>
+                    </div>
+                </article>
+                <article class="proyecto">
+                    <img src="img/patrones.avif" alt="Patrones" width="550px" height="350px"></a>
+                    <h3>Expresiones regulares</h3>
+                    <h4>Java</h4>
+                    <div class="visualizar">
+                        <a href="https://github.com/MaruSuarez14/Patrones-de-texto.git"> Ver proyecto </a>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+
+        <!--Contacto-->
+        <section class="contacto" id="contacto">
+            <div class="contacto-div">
+                <h2 class="titulo"> Contacto </h2>
+                <div class="contacto-fila">
+                    <div class="contacto-columna">
+                        <h3 class="contacto-titulo">¿Quieres ponerte en contacto conmigo? </h3>
+                        <p class="contacto-parrafo"> ¡Escríbeme un mensaje al correo electrónico y te contestaré cuanto
+                            antes!
+                        </p>
+
+                    </div>
+                    <div class="contacto-columna">
+                        <form>
+                            <ul>
+                                <li class="contacto-form">
+                                    <label for="name"> Nombre: </label>
+                                    <input type="text" id="name">
+                                </li>
+                                <li class="contacto-form">
+                                    <label for="correo"> Correo electrónico: </label>
+                                    <input type="text" id="correo">
+                                </li>
+                                <li class="contacto-form">
+                                    <label for="phone_number"> Número de teléfono: </label>
+                                    <input type="number" id="phone_number">
+                                </li>
+                                <li class="contacto-form">
+                                    <label for="asunto"> Asunto: </label>
+                                    <input type="text" id="asunto">
+                                </li>
+                                <li class="contacto-form">
+                                    <textarea rows="10" placeholder="Mensaje"></textarea>
+                                </li>
+                            </ul>
+                            <input type="submit" class="contacto-boton" name="Enviar">
+                        </form>
+
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!--Footer-->
+    <footer class="footer">
+        <section class="redes" role="link">
+            <a href="https://twitter.com/14Emme" aria-label="Twitter"><i class="fa-brands fa-twitter"></i></a>
+            <a href="https://www.instagram.com/cabramelizada/" aria-label="Instagram"><i
+                    class="fa-brands fa-instagram"></i></a>
+            <a href="https://www.facebook.com/maru.suarezpastene" aria-label="Facebook"><i
+                    class="fa-brands fa-facebook"></i></a>
+        </section>
+    </footer>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
